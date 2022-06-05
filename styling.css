@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 219, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 10px;
+    width: 60%;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    border-right: 3px solid rgb(203, 130, 255);
+}
+
+nav ul li:last-child{
+    border: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: thistle;
+}
+
+.logo {
+    display: inline-block;
+    width: 30%;
+    padding-top: 12px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: brown;
+    text-shadow: 1px 1px 2px orangered;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('assetsforproject/banner-2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.banner div {
+    height: 100px;
+}
+
+.banner div p{
+    color: brown;
+}
+
+.first{
+    animation: moveleftright 4s ease-out infinite alternate-reverse;
+}
+
+@keyframes moveleftright {
+    from {
+        margin-left: 0%;
+        font-size: 20px;
+    }
+
+    50% {
+        font-size: 40px;
+    }
+
+    to {
+        margin-left: 100%;
+        font-size: 20px;
+    }
+}
+
+.second{
+    text-align: center;
+    font-size: 64px;
+    animation: appear 4s
+}
+
+@keyframes appear{
+    from {
+        height: 0%;
+        overflow: hidden;
+    }
+    to {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+.third{
+    text-align: center;
+    font-size: 14px;
+    animation: flyup 3s ease-out infinite alternate-reverse
+}
+
+@keyframes flyup{
+    from{
+        transform: translateY(75px);
+    }
+    to {
+        transform: translateY(10px)
+    }
+}
+
+
+
+.coursecard {
+    width:250px;
+    height: 255px;
+    background-color: whitesmoke;
+    border: 4px solid wheat;
+    display: inline-block
+}
+
+.coursecard img {
+    width: 100%;
+    height: 150px
+}
+
+.journey {
+    height: 300px;
+    background-color: rgb(249, 215, 250);
+}
+
+.title {
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 2px;
+    padding: 5px 0;
+}
+
+.slideshow {
+    width: 90%;
+    height: 250px;
+    background-color: azure;
+    margin: 0 auto;
+    background-size: cover;
+    animation: slideshow 20s linear infinite
+}
+
+@keyframes slideshow{
+    0% {
+        background-image: url(assetsforproject/2019.jpg);
+    }
+    25% {
+        background-image: url(assetsforproject/2020.jpg);
+    }
+    50% {
+        background-image: url(assetsforproject/2021.jpg);
+    }
+    75% {
+        background-image: url(assetsforproject/2021.jpg);
+    }
+    100% {
+        background-image: url(assetsforproject/2019.jpg);
+    }
+}
+
+.our_courses .course {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+.our_courses .course img {
+    width: 35%;
+    height: 240px;
+    float: left;
+    border-radius: 15px;
+}
+
+.our_courses .course h3{
+    padding: 5px 0;
+    font-size: 23px;
+}
+
+.our_courses .course h4{
+    padding: 5px 0;
+    font-size: 18px;
+    color: grey;
+}
+
+.level{
+    color: indianred;
+}
+
+.our_courses .course p{
+    padding: 5px 0;
+    font-size: 18px;
+    color: rgb(115, 105, 118);
+}
+
+.whychooseus {
+    text-align: center;
+}
+
+.whychooseus .whychooseus {
+    width: 30%;
+    height: 135px;
+    margin: 5px;
+    border: 3px solid white;
+    background-color: rgb(255, 227, 231);
+    overflow: scroll;
+    display: inline-block;
+}
+
+.whychooseus .whychooseus img {
+    width: auto;
+    height: auto;
+    float: left;
+    border-radius: 15px;
+}
+
+.whychooseus .whychooseus h3 {
+    color: rgb(48, 48, 112);
+}
+
+
+
+.our_prices table{
+    width: 90%;
+    background-color: aliceblue;
+    margin: 0 auto
+}
+
+.our_prices table thead{
+    background-color: antiquewhite;
+    height: 48px;
+    color: white;
+}
+
+.our_prices table thead tr:nth-child(odd){
+    background-color: thistle;
+}
+
+.our_prices table tbody tr:nth-child(odd){
+    background-color: thistle;
+}
+
+.our_teachers {
+    background-color: rgb(249, 215, 250);
+    text-align: center;
+}
+
+.our_teachers .teacher {
+    width: 38%;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15%;
+    border: 2px solid palevioletred;
+
+    display: inline-block;
+    margin: 5px;
+
+    transition: all 500ms linear
+}
+
+.our_teachers .teacher:hover {
+    transform: scale(1.05)
+}
+
+.our_teachers .teacher img{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+
+    border-radius: 50%;
+    border: 2px solid thistle;
+}
+
+.fhq {
+    padding-left: 15px;
+}
+
+.fhq a{
+    text-decoration: none;
+    color: hotpink;
+}
+
+.fhq article{
+    background-color: rgb(255, 210, 232);
+    height: 0;
+    overflow: hidden;
+
+    transition: all 1s linear;
+}
+
+.fhq article:target{
+    height: 40px;
+    overflow: hidden;
+}
+
+.number{
+    color: indianred;
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    padding: 5px;
+}
+
+#contact {
+    background-color: rgb(250, 176, 200);
+}
+
+.formwrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    height: 50px;
+    padding: 10px;
+}
+
+label, input{
+    display: inline-block;
+    width: 25%;
+}
+
+input, select {
+    display: inline-block;
+    width: 55%;
+    font-family: monospace;
+    height: 32px;
+    border: 2px solid lavenderblush
+}
+
+input[type="submit"]{
+    width: 100%;
+}
+
+input:focus{
+    color: slategray;
+}
+
+.whatotherssay {
+    text-align: center;
+}
+
+.whatotherssay .reviews {
+    width: 30%;
+    height: 135px;
+    margin: 5px;
+    border: 2px solid lightpink;
+    overflow: scroll;
+    display: inline-block;
+}
+
+.whatotherssay h2 {
+    color: white;
+}
+
+.whatotherssay .reviews h3 {
+    color: rgb(218, 155, 255);
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
